@@ -50,22 +50,31 @@ resource "aws_route_table" "public" {
   }
 }
 
-resource "aws_route_table_association" "private-eu-west-1a" {
-  subnet_id      = aws_subnet.private-eu-west-1a.id
+resource "aws_route_table_association" "private-ap-southeast-1a" {
+  subnet_id      = aws_subnet.private-ap-southeast-1a.id
   route_table_id = aws_route_table.private.id
 }
 
-resource "aws_route_table_association" "private-eu-west-1b" {
-  subnet_id      = aws_subnet.private-eu-west-1b.id
+resource "aws_route_table_association" "private-ap-southeast-1b" {
+  subnet_id      = aws_subnet.private-ap-southeast-1b.id
   route_table_id = aws_route_table.private.id
 }
 
-resource "aws_route_table_association" "public-eu-west-1a" {
-  subnet_id      = aws_subnet.public-eu-west-1a.id
+resource "aws_route_table_association" "private-ap-southeast-1c" {
+  subnet_id      = aws_subnet.private-ap-southeast-1c.id
+  route_table_id = aws_route_table.private.id
+}
+
+resource "aws_route_table_association" "public-ap-southeast-1a" {
+  subnet_id      = aws_subnet.public-ap-southeast-1a.id
   route_table_id = aws_route_table.public.id
 }
 
-resource "aws_route_table_association" "public-eu-west-1b" {
-  subnet_id      = aws_subnet.public-eu-west-1b.id
+resource "aws_route_table_association" "public-ap-southeast-1b" {
+  subnet_id      = aws_subnet.public-ap-southeast-1b.id
+  route_table_id = aws_route_table.public.id
+}
+resource "aws_route_table_association" "public-ap-southeast-1c" {
+  subnet_id      = aws_subnet.public-ap-southeast-1c.id
   route_table_id = aws_route_table.public.id
 }

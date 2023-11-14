@@ -4,9 +4,9 @@ resource "aws_lb" "app1_alb" {
   load_balancer_type = "application"
   security_groups    = [aws_security_group.app1-sg02-LB01.id]
   subnets            = [
-    aws_subnet.public-eu-west-1a.id,
-    aws_subnet.public-eu-west-1b.id,
-    aws_subnet.public-eu-west-1c.id
+    aws_subnet.public-ap-southeast-1a.id,
+    aws_subnet.public-ap-southeast-1b.id,
+    aws_subnet.public-ap-southeast-1c.id
   ]
   enable_deletion_protection = false
 

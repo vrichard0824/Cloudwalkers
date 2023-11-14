@@ -1,85 +1,85 @@
 #These are   for  public
 
-resource "aws_subnet" "public-eu-west-1a" {
+resource "aws_subnet" "public-ap-southeast-1a" {
   vpc_id                  = aws_vpc.app1.id
-  cidr_block              = "10.32.1.0/24"
-  availability_zone       = "eu-west-1a"
+  cidr_block              = "10.16.1.0/24"
+  availability_zone       = "ap-southeast-1a"
   map_public_ip_on_launch = true
 
   tags = {
-    Name    = "public-eu-west-1a"
+    Name    = "public-ap-southeast-1a"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 }
 
-resource "aws_subnet" "public-eu-west-1b" {
+resource "aws_subnet" "public-ap-southeast-1b" {
   vpc_id                  = aws_vpc.app1.id
-  cidr_block              = "10.32.2.0/24"
-  availability_zone       = "eu-west-1b"
+  cidr_block              = "10.16.2.0/24"
+  availability_zone       = "ap-southeast-1b"
   map_public_ip_on_launch = true
 
   tags = {
-    Name    = "public-eu-west-1b"
+    Name    = "public-ap-southeast-1b"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 }
 
 
-resource "aws_subnet" "public-eu-west-1c" {
+resource "aws_subnet" "public-ap-southeast-1c" {
   vpc_id                  = aws_vpc.app1.id
-  cidr_block              = "10.32.3.0/24"
-  availability_zone       = "eu-west-1c"
+  cidr_block              = "10.16.3.0/24"
+  availability_zone       = "ap-southeast-1c"
   map_public_ip_on_launch = true
 
   tags = {
-    Name    = "public-eu-west-1c"
+    Name    = "public-ap-southeast-1c"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 }
 
 #these are for private
-resource "aws_subnet" "private-eu-west-1a" {
+resource "aws_subnet" "private-ap-southeast-1a" {
   vpc_id            = aws_vpc.app1.id
-  cidr_block        = "10.32.11.0/24"
-  availability_zone = "eu-west-1a"
+  cidr_block        = "10.16.11.0/24"
+  availability_zone = "ap-southeast-1a"
 
   tags = {
-    Name    = "private-eu-west-1a"
+    Name    = "private-ap-southeast-1a"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 }
 
-resource "aws_subnet" "private-eu-west-1b" {
+resource "aws_subnet" "private-ap-southeast-1b" {
   vpc_id            = aws_vpc.app1.id
-  cidr_block        = "10.32.12.0/24"
-  availability_zone = "eu-west-1b"
+  cidr_block        = "10.16.12.0/24"
+  availability_zone = "ap-southeast-1b"
 
   tags = {
-    Name    = "private-eu-west-1b"
+    Name    = "private-ap-southeast-1b"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 }
 
 
-resource "aws_subnet" "private-eu-west-1c" {
+resource "aws_subnet" "private-ap-southeast-1c" {
   vpc_id            = aws_vpc.app1.id
-  cidr_block        = "10.32.13.0/24"
-  availability_zone = "eu-west-1c"
+  cidr_block        = "10.16.13.0/24"
+  availability_zone = "ap-southeast-1c"
 
   tags = {
-    Name    = "private-eu-west-1c"
+    Name    = "private-ap-southeast-1c"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 }

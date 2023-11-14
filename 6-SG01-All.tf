@@ -20,7 +20,7 @@ resource "aws_security_group" "app1-sg01-servers" {
   }
 
   ingress {
-    description = "MyEvilBox"
+    description = "RDP"
     from_port   = 3389
     to_port     = 3389
     protocol    = "tcp"
@@ -38,8 +38,8 @@ resource "aws_security_group" "app1-sg01-servers" {
   tags = {
     Name    = "app1-sg01-servers"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 
 }
@@ -71,8 +71,8 @@ resource "aws_security_group" "app1-sg02-LB01" {
   tags = {
     Name    = "app1-sg02-LB01"
     Service = "application1"
-    Owner   = "Luke"
-    Planet  = "Musafar"
+    Owner   = "Cloudwalkers"
+    Planet  = "Saturn"
   }
 
 }

@@ -1,9 +1,9 @@
 resource "aws_launch_template" "app1_LT" {
   name_prefix   = "app1_LT"
-  image_id      = "ami-06ed60ed1369448bd"  
+  image_id      = "ami-05caa5aa0186b660f"  
   instance_type = "t2.micro"
 
-  key_name = "MyLinuxBox"
+  key_name = "ap_southeast_cloudwalkers"
 
   vpc_security_group_ids = [aws_security_group.app1-sg01-servers.id]
 
@@ -33,12 +33,12 @@ resource "aws_launch_template" "app1_LT" {
     <!doctype html>
     <html lang="en" class="h-100">
     <head>
-    <title>Details for EC2 instance</title>
+    <title>Cloudwalkers Conquer Singapore</title>
     </head>
-    <body>
+    <body src="https://drive.google.com/file/d/18oVywNmIa_zktxOtYRSbl7-5CeFqspBN/view?usp=sharing">
     <div>
-    <h1>Malgus Clan</h1>
-    <h1>Chains Broken in Ireland</h1>
+    <h1>Saturn</h1>
+    <h1>Planting our Flag in Singapore</h1>
     <p><b>Instance Name:</b> $(hostname -f) </p>
     <p><b>Instance Private Ip Address: </b> $local_ipv4</p>
     <p><b>Availability Zone: </b> $az</p>
@@ -58,8 +58,8 @@ resource "aws_launch_template" "app1_LT" {
     tags = {
       Name    = "app1_LT"
       Service = "application1"
-      Owner   = "Chewbacca"
-      Planet  = "Mustafar"
+      Owner   = "Cloudwalkers"
+      Planet  = "Saturn"
     }
   }
 
