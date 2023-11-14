@@ -35,7 +35,7 @@ resource "aws_launch_template" "app1_LT" {
     <head>
     <title>Cloudwalkers Conquer Singapore</title>
     </head>
-    <body src="https://drive.google.com/file/d/18oVywNmIa_zktxOtYRSbl7-5CeFqspBN/view?usp=sharing">
+    <body>
     <div>
     <h1>Saturn</h1>
     <h1>Planting our Flag in Singapore</h1>
@@ -43,6 +43,7 @@ resource "aws_launch_template" "app1_LT" {
     <p><b>Instance Private Ip Address: </b> $local_ipv4</p>
     <p><b>Availability Zone: </b> $az</p>
     <p><b>Virtual Private Cloud (VPC):</b> $vpc</p>
+    <img src="https://images.salsify.com/image/upload/s--r2Vqk9Go--/q0x2mwwjsfegrtzccyhv">
     </div>
     </body>
     </html>
